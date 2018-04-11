@@ -59,7 +59,7 @@ def sendMail(overload, indicator):
 		server = smtplib.SMTP('smtp.gmail.com', 587)		# standard SMTP protocol communication
 		server.ehlo()
 		server.starttls()
-		server.login("serveralert@email.com", "password")
+		server.login("your_email@email.com", "password_here")
 		if indicator == 1:
 			MESSAGE = printCPU(overload)
 		elif indicator == 2:
